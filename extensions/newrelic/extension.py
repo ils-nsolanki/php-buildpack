@@ -24,6 +24,8 @@ import logging
 _log = logging.getLogger('newrelic')
 
 
+
+
 DEFAULTS = {
     'NEWRELIC_HOST': 'download.newrelic.com',
     'NEWRELIC_VERSION': '4.20.2.95',
