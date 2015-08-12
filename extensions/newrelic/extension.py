@@ -13,7 +13,6 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 """NewRelic Extension
-
 Downloads, installs and configures the NewRelic agent for PHP
 """
 import os
@@ -22,8 +21,6 @@ import logging
 
 
 _log = logging.getLogger('newrelic')
-
-
 
 
 DEFAULTS = {
@@ -79,8 +76,6 @@ class NewRelicInstaller(object):
         vcap_app = self._ctx.get('VCAP_APPLICATION', {})
         self.app_name = vcap_app.get('name', None)
         self._log.debug("App Name [%s]", self.app_name)
-
-
 
         if 'NEWRELIC_LICENSE' in self._ctx.keys():
             if self._detected:
