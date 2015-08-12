@@ -77,8 +77,8 @@ class NewRelicInstaller(object):
 
     def _load_newrelic_info(self):
         vcap_app = self._ctx.get('VCAP_APPLICATION', {})
-	   self.app_name = vcap_app.get('name', None)
-       self._log.debug("App Name [%s]", self.app_name)
+        self.app_name = vcap_app.get('name', None)
+        self._log.debug("App Name [%s]", self.app_name)
 
 
 
